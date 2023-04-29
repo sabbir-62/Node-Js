@@ -18,7 +18,7 @@ const server = http.createServer((req, res)=>{
         })
     }
 
-    if(req.url == "/"){
+    if(req.url == "/" || req.url == "/home"){
         sendData("./public/home.html", 200)
     }
     else if(req.url == "/about"){
